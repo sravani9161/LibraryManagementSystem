@@ -1,7 +1,7 @@
 const express=require('express');
 const router=express.Router();
 const collectionModel=require('../Models/collectionmodel.js');
-const itemModel = require('../Models/itemModel.js');
+const itemModel = require('../Models/itemmodel.js');
 
 const checkCollection=(req,res,next)=>{
     const body=req.body;
