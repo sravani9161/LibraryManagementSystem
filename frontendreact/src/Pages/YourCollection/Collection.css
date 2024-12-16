@@ -1,0 +1,123 @@
+.subpage2 .searchbar .search h1
+{
+    font-size:50px;
+}
+.subpage2  hr
+{
+    color: rgba(0, 0, 0, 0.167);
+    width: 900px;
+    margin-right:70px;
+}
+.collectionform
+{
+    margin-left:20px;
+    margin-top:50px;
+}
+.collectionform  h4
+{
+    margin-top:3px;
+}
+.collectionform input
+{
+    width:50vw;
+    height:6vh;
+    border-radius:5px;
+    border:1px solid rgba(0, 0, 0, 0.283);
+    text-indent:10px;
+}
+.collectionform .bar2 select
+{
+    width:50vw;
+    height:6vh;
+    border-radius:5px;
+    border:1px solid rgba(0, 0, 0, 0.283);
+    text-indent:5px;
+    background-color:#d5d5d52f;
+}
+.collectionform button
+{
+    width:160px;
+    height: 38px;
+    margin-left:10px;
+    color:white;
+    background-color: rgba(52, 191, 182, 0.774);
+    border:none;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-top:30px;
+    font-size: 16px;
+}
+.itemdisplayed
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.itemdisplayed .newbook
+{
+
+    width: 200px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 50px;
+}
+.itemdisplayed  .newbook button
+{
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 5px;
+    width: 100px;
+}
+@media (max-width: 480px) {
+    .Container
+    {
+        width: 100%;
+        overflow: hidden;
+    }
+    .Container .subpage2
+    {
+        width: 100vw;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Container .subpage2 .searchbar 
+    {
+        display: flex;
+
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .Container .subpage2 .searchbar .search{
+       margin-bottom: 50px;
+       margin-top: 50px;
+    }
+    .Container .subpage2 .searchbar .logout
+    {
+        width: 200px;
+    }
+    .collectionform
+    {
+        margin-left: 40px;
+
+
+    }
+    .itemdisplayed
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
