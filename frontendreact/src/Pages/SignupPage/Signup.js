@@ -4,8 +4,8 @@ import img2 from '../../Images/Image2.jpg';
 import video from '../../Videos/video.mp4';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import url from '../../Utils';
 
-const render_url='https://librarymanagementfrontend-jpz0.onrender.com'
 function Signup(){
 
  const signUpUrl=`http://localhost:2000/user/register`;  //data to be posted as sign up form
@@ -46,7 +46,7 @@ function Signup(){
         return;
     }
 
-     const dataposted=fetch(signUpUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+     const dataposted=fetch(`${url}/user/register`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
         "name":name,
         "email":email,
         "password":password,

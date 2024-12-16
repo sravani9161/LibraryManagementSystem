@@ -3,9 +3,7 @@ import img from '../../Images/book2.png';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
-
-const render_url='http://localhost:2000'
-const url=`${render_url}/user/login`;
+import url from '../../Utils';
 
 
 function Login(){
@@ -15,7 +13,7 @@ function Login(){
     const [scrolled,setscrolled]=useState(false);
     const [response,setResponse]=useState(false);
     const submitData=async ()=>{
-        const datafetched=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(
+        const datafetched=await fetch(`${url}/user/login`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(
             {
                 'email':email,
                 'password':password,
