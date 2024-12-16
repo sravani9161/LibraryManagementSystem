@@ -7,7 +7,11 @@ const mongoose=require('mongoose');
 const cors=require('cors');
 const  collectionPageRoute=require('./Routes/CollectionRoute.js');
 
-app.use(cors());
+app.use(cors(
+    {
+        origin:"https://librarymanagementsystem-1-rf6b.onrender.com"
+    }
+));
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
